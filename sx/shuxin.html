@@ -1,0 +1,189 @@
+<html>
+<title> 书信 </title>
+<meta>
+</meta>
+
+<body>
+    <div class="mainbox">
+        <div class="header">
+            <div class="header-box">
+                <div class="header-content">
+                    <div class="">书信logo</div>
+                </div>
+                <div class="header-content">
+                    <div class="=">关于书信</div>
+                </div>
+                <div class="loginbox">
+                    <div class="login">
+                        <div class="header-content">
+                            <div class="=">登录/注册</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contentbox">
+            <div class="content">
+                <img class="content-img" src="public/c1.png" />
+            </div>
+            <div class="content">
+                <img class="content-img" src="public/c2.png" />
+            </div>
+            <div class="content">
+                <div class="lunbo">
+                    <div class="lunbo-ul">
+                        <div><img id="l1" src="public/c3.png" style="display: '';" /></div>
+                        <div><img id="l2" src="public/c4.png" style="display: none;" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="footer-list">
+                    <div class="flist">
+                        <h5>热门链接</h5>
+                        <a href="http://www.yaochac.com" target="_blank"><h5>药查查</h5></a>
+                    </div>
+                    <div class="flist">
+                        <h5>友情赞助</h5>
+                        <a href="http://www.github.com" target="_blank"><h5>GitHub</h5></a>
+                        <br/>
+                        <a href="http://www.gitee.com" target="_blank"><h5>Gitee</h5></a>
+                    </div>
+                    <div class="flist">
+                        <h5>优秀个人</h5>
+                        <a href="https://gitee.com/seven7ds" target="_blank"><h5>全栈大佬:曾頔</h5></a>
+                        <br/>
+                    </div>
+                    <div class="flist">
+                        <h5>友情赞助</h5>
+                        <a href="https://gitee.com/seven7ds" target="_blank"><h5>曾頔</h5></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<style type="text/css">
+    .lunbo {
+        width: 1400px;
+        overflow: hidden;
+        margin: auto;
+    }
+    a{
+        text-decoration:none; 
+    }
+    img {
+        width: 1400px;
+        height: 600px;
+    }
+
+    .lunbo-ul {
+        width: 800px;
+        list-style-type: none;
+        display: flex;
+    }
+
+    .flist {
+        margin-left: 50px;
+        padding: 20px;
+    }
+
+    .footer-list {
+        margin: auto;
+        display: flex;
+    }
+
+    .contentbox {
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .content {
+        margin: auto;
+        width: 1400px;
+    }
+
+    .content {
+        width: 1400px;
+        margin: auto;
+    }
+
+    .content-img {
+        width: 100%;
+        height: 600px;
+    }
+
+    .header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .loginbox {
+        position: relative;
+        left: 900px;
+        height: 70px;
+    }
+
+    .login {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-box {
+        background: rgb(235, 234, 234);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        opacity: 0.5;
+        width: 1400px;
+        margin: auto;
+    }
+
+    .header-content {
+        line-height: 70px;
+        height: 70px;
+        width: 150px;
+    }
+
+    .logo {
+        height: 70px;
+        width: 100px;
+    }
+
+    .about {
+        height: 70px;
+        width: 100px;
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        .example {
+            background: orange;
+        }
+    }
+</style>
+<script>
+    function lunbo() {
+        var a = document.getElementById('l1')
+        var b = document.getElementById('l2')
+        setInterval(() => paly(a, b), 1500)
+    }
+    function paly(v, v1) {
+        if (v.style.display == "none") {
+            v.style.display = ""
+            v1.style.display = "none"
+        } else {
+            v.style.display = "none"
+            v1.style.display = ""
+        }
+    }
+
+    lunbo()
+</script>
+
+</html>
